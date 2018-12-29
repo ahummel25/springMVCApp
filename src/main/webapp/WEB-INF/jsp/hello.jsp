@@ -2,8 +2,21 @@
 <html>
 <head>
   <title>Hello world: </title>
+  <style type="text/css">
+    body {
+      background-image:
+          url('https://cdn.crunchify.com/wp-content/uploads/2013/03/Crunchify.bg_.300.png');
+    }
+
+    .container-content {
+      text-align: center;
+      position: relative;
+    }
+  </style>
 </head>
 <body>
-  <h2>${message}</h2>
+  <div class="container-content">
+    <h2>${message}</h2>
+  </div>
 </body>
 </html>
