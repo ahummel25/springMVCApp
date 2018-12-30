@@ -18,11 +18,15 @@ body {
             }
         });
     }
+
+    function goBackToHome() {
+      var baseURL = window.location.origin;
+      window.location.href = baseURL + '/springMVCApp';
+    }
 </script>
 
 <script type="text/javascript">
-    var intervalId = 0;
-    intervalId = setInterval(crunchifyAjax, 3000);
+    setInterval(crunchifyAjax, 3000);
 </script>
 </head>
 
@@ -34,6 +38,8 @@ body {
         <p>
             by <a href="https://crunchify.com">Crunchify.com</a>
         </p>
+        <br>
+        <button type="button" onclick="goBackToHome()">Home Page</button>
     </div>
 </body>
 </html>
